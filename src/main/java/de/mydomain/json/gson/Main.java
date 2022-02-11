@@ -2,7 +2,7 @@ package de.mydomain.json.gson;
 
 import com.google.gson.Gson;
 
-public class MainGSON {
+public class Main {
     public static void main(String[] args) {
 
         MobilePhone mobilePhone = new MobilePhone();

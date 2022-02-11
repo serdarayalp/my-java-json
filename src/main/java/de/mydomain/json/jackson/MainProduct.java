@@ -3,7 +3,7 @@ package de.mydomain.json.jackson;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-public class MainJackson {
+public class MainProduct {
 
     public static void main(String[] a) {
 

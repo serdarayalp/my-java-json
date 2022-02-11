@@ -3,7 +3,7 @@ package de.mydomain.json.jackson;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-public class MainCompareJSONs {
+public class MainCompare {
 
     private String json1 = "{ \n" +
             "    \"employee\":\n" +
@@ -34,7 +34,7 @@ public class MainCompareJSONs {
             "}";
 
     public static void main(String[] args) {
-        MainCompareJSONs main = new MainCompareJSONs();
+        MainCompare main = new MainCompare();
         main.compareJSONs(main.json1, main.json2);
     }
 
