@@ -1,4 +1,4 @@
-package de.mydomain.json.annotation;
+package de.mydomain.json.jackson.annotation;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

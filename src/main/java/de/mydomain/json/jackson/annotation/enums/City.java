@@ -1,4 +1,4 @@
-package de.mydomain.json.enums;
+package de.mydomain.json.jackson.annotation.enums;
 
 public class City {
     private Distance distance;

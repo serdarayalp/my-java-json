@@ -1,4 +1,4 @@
-package de.mydomain.json.property_order;
+package de.mydomain.json.jackson.property_order;
 
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 

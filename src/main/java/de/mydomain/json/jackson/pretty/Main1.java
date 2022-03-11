@@ -1,19 +1,16 @@
-package de.mydomain.json.pretty;
+package de.mydomain.json.jackson.pretty;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.SerializationFeature;
 
 import java.io.IOException;
 
-public class Main2 {
+public class Main1 {
     public static void main(String[] args) throws IOException {
 
         ObjectMapper mapper = new ObjectMapper();
-        mapper.enable(SerializationFeature.INDENT_OUTPUT);
 
         User user = new User(1, "Max", "Mustermann", "Max Mustermann");
-
-        String result = mapper.writeValueAsString(user);
+        String result = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(user);
 
         System.out.println(result);
     }

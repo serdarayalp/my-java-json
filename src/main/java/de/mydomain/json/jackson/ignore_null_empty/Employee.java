@@ -1,23 +1,20 @@
-package de.mydomain.json.ignore;
+package de.mydomain.json.jackson.ignore_null_empty;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
 
-/*@JsonIgnoreProperties(value = {
-    "id",
-    "firstName"
-})*/
-public class User {
+/*@JsonInclude(Include.NON_NULL)*/
+public class Employee {
 
-    @JsonIgnore
     private int id;
 
-    @JsonIgnore
+    /*@JsonInclude(Include.NON_NULL)*/
     private String firstName;
 
+    /*@JsonInclude(Include.NON_EMPTY)*/
     private String lastName;
 
-    public User(int id, String firstName, String lastName) {
+    public Employee(int id, String firstName, String lastName) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;

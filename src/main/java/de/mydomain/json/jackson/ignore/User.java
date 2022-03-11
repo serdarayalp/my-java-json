@@ -1,17 +1,26 @@
-package de.mydomain.json.pretty;
+package de.mydomain.json.jackson.ignore;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+/*@JsonIgnoreProperties(value = {
+    "id",
+    "firstName"
+})*/
 public class User {
 
+    @JsonIgnore
     private int id;
-    private String firstName;
-    private String lastName;
-    private String fullName;
 
-    public User(int id, String firstName, String lastName, String fullName) {
+    @JsonIgnore
+    private String firstName;
+
+    private String lastName;
+
+    public User(int id, String firstName, String lastName) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
-        this.fullName = fullName;
     }
 
     public int getId() {
@@ -36,13 +45,5 @@ public class User {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
-    }
-
-    public String getFullName() {
-        return fullName;
-    }
-
-    public void setFullName(String fullName) {
-        this.fullName = fullName;
     }
 }

@@ -1,4 +1,4 @@
-package de.mydomain.json.ignore_null_empty;
+package de.mydomain.json.jackson.ignore_null_empty;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.core.JsonProcessingException;

@@ -1,4 +1,4 @@
-package de.mydomain.json.enums;
+package de.mydomain.json.jackson.annotation.enums;
 
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.core.JsonProcessingException;

@@ -1,23 +1,17 @@
-package de.mydomain.json.ignore_null_empty;
+package de.mydomain.json.jackson.pretty;
 
-import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.annotation.JsonInclude.Include;
-
-/*@JsonInclude(Include.NON_NULL)*/
-public class Employee {
+public class User {
 
     private int id;
-
-    /*@JsonInclude(Include.NON_NULL)*/
     private String firstName;
-
-    /*@JsonInclude(Include.NON_EMPTY)*/
     private String lastName;
+    private String fullName;
 
-    public Employee(int id, String firstName, String lastName) {
+    public User(int id, String firstName, String lastName, String fullName) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
+        this.fullName = fullName;
     }
 
     public int getId() {
@@ -42,5 +36,13 @@ public class Employee {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    public String getFullName() {
+        return fullName;
+    }
+
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
     }
 }

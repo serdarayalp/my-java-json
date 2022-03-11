@@ -1,4 +1,4 @@
-package de.mydomain.json.ignore;
+package de.mydomain.json.jackson.ignore;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreType;
 
