@@ -1,4 +1,4 @@
-package de.mydomain.json.jackson.annotation.enums;
+package de.mydomain.json.jackson.enums;
 
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.databind.DeserializationContext;

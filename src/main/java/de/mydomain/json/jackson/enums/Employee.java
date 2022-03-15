@@ -1,4 +1,4 @@
-package de.mydomain.json.jackson.annotation.enums;
+package de.mydomain.json.jackson.enums;
 
 public class Employee {
 

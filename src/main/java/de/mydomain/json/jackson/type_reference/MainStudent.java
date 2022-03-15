@@ -35,7 +35,7 @@ public class MainStudent {
 
             String json = mapper.writeValueAsString(userDataMap);
 
-            userDataMap = (Map<String, UserData>) mapper.readValue(json, typeReference);
+            userDataMap = (Map<String, UserData>) mapper.readValue(json, Object.class);
 
             System.out.println(userDataMap.get("userData").getStudent());
             System.out.println(userDataMap.get("userData").getName());
